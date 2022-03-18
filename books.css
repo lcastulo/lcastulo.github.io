@@ -1,0 +1,284 @@
+
+
+/* ===========
+  HEADER
+============ */
+
+.header-book {
+  background-image: linear-gradient(to right bottom, #0d0a09, #1c0a03, #270a00, #310800, #3b0200);
+  min-height: 8rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow:  0 0 10px #888;
+  padding-bottom: 8rem;
+}
+
+/* ==== HEADER NAV, DROPDOWN ==== */
+.content-title-book{
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.content-subtitle-book{
+  padding-top: 10rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem; 
+  font-weight: bold;
+}
+
+/* ==== SECTION GENERAL ==== */
+.section {
+	padding: 10rem 0;
+	text-align: center;
+}
+
+.section-title {
+	font-size: 2.5rem;
+}
+
+.subsection-title {
+	font-size: 2.9rem;
+	margin-bottom: 1.8rem;
+}
+
+.book-subtitle{
+  text-align: center;
+}
+
+.title-container{
+  width: 100%;
+}
+
+.section-card{
+  padding: 5rem 2rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-bottom: 8rem;
+  box-shadow:  0 0 10px #888;
+  background-color: #efefef;
+}
+
+.section-card p{
+  padding-bottom: 3rem;
+}
+@media (min-width: 1000px) {
+	.section {
+		text-align: left;
+	}
+}
+
+/* === SECTION ONE === */
+.section-one {
+	margin-bottom: 4rem;
+	overflow: hidden;
+}
+
+.section-one-title {
+	font-size: clamp(3rem, 3vw + 1rem, 4rem);
+}
+
+.book-subtitle{
+  font-size: clamp(2rem, 2,5vw + .2rem, 2.5rem);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.subsection-one,
+.subsection-two {
+	max-width: 60ch;
+}
+
+.section-one-container {
+	display: grid;
+	justify-items: center;
+	gap: 4.5rem;
+	grid-template-areas:
+		"img"
+		"paragraph-1"
+		"paragraph-2";
+}
+
+.section-one-title {
+	grid-area: title;
+}
+
+.section-one-img-wrapper {
+	grid-area: img;
+	width: 50%;
+}
+
+.img-mobile{
+	box-shadow:  0 0 10px #888;
+  margin-top: 5rem;
+}
+
+.subsection-one {
+	grid-area: paragraph-1;
+}
+
+.subsection-two {
+	grid-area: paragraph-2;
+}
+
+input[type=submit]{
+  background-color: #FFC315;
+  color: #080808;
+  font-family: "Ubuntu", sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.75rem;
+  display: inline-block;
+  transition: 1s;
+}
+
+input[type=submit]:hover{
+  background-color: #FEA909;
+  transition: 1s;
+}
+
+@media (min-width: 1000px) {
+	.img-desktop{
+		box-shadow:  0 0 10px #888;
+	}
+	.section-one {
+		position: relative;
+		margin-bottom: 0rem;
+		padding-top: 4rem;
+    padding-bottom: 16rem;
+	}
+
+  .section-card{
+    margin-top: 15rem;
+  }
+
+  .book-subtitle{
+    font-size: 2.5rem
+  }
+
+	.section-one-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0rem;
+		grid-template-areas:
+			"title img"
+			"paragraph-1 img"
+			"paragraph-2 img";
+	}
+
+	.section-one-title {
+		justify-self: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.section-one-img-wrapper {
+		margin-top: 150px;
+		width: 70%;
+		top: 70%;
+		
+	}
+
+	.subsection-one {
+		margin-top: 2rem;
+	}
+
+	.subsection-two {
+		margin-bottom: 2rem;
+	}
+}
+
+
+/* ===========
+  FOOTER
+============= */
+.footer {
+  background: #080808;
+  text-align: left;
+  color: var(--clr-blue-200);
+  padding-top: 8rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.footer-container {
+  display: grid;
+  justify-items: left;
+  grid-template-columns: 1fr;
+  gap: 10rem;
+  padding-left: 3rem;
+}
+
+.footer h3 {
+  color: var(--clr-white);
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo-wrapper {
+  margin-bottom: 4rem;
+  width: 30%;
+  max-width: 130px;
+}
+
+.footer-nav-item {
+  padding: 0.3rem 0;
+}
+
+.footer-nav-link {
+  font-size: 1.8rem;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  font-weight: 700;
+  color: #fff;
+}
+
+.author-links-container {
+  padding: 1.5rem 0;
+  margin-top: 7rem;
+  text-align: center;
+  color: #fefefe;
+  background-color: #080808;
+}
+
+.dev-logo{
+  fill: #efefef;
+}
+
+
+@media (min-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-logo-wrapper {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    text-align: left;
+    padding-left: 0rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+  }
+
+  .footer-logo-wrapper {
+    grid-column: 1/2;
+  }
+}
